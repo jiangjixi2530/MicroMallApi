@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MicroMall.Model</name>
+    </assembly>
+    <members>
+        <member name="T:MicroMall.Model.DbModels.mall_category">
+            <summary>
+            产品分类表
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_category.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_category.Name">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_category.SortIndex">
+            <summary>
+            排序码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_category.ParentId">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_category.Deep">
+            <summary>
+            1：一级分类 2:二级分类
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_category.GroupId">
+            <summary>
+            集团id
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.DbModels.mall_company">
+            <summary>
+            企业信息表
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.CompanyName">
+            <summary>
+            企业名称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.PassWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.AreaId">
+            <summary>
+            所在区域（区县Code）
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.LegalPerson">
+            <summary>
+            法人
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Phone">
+            <summary>
+            电话
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Fax">
+            <summary>
+            传真
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Address">
+            <summary>
+            详细地址
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Relation">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.RelationPhone">
+            <summary>
+            联系人电话
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.BankName">
+            <summary>
+            开户行名称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.BankNumber">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.PostCode">
+            <summary>
+            邮政编码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.ParentId">
+            <summary>
+            上级Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.UniqueCode">
+            <summary>
+            唯一编码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Status">
+            <summary>
+            是否可用，1：可用 0：停用
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.CreateDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.ModifyDate">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_company.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.DbModels.mall_product">
+            <summary>
+            产品信息表
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.Code">
+            <summary>
+            产品简码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.Name">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.UnitId">
+            <summary>
+            单位Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.UnitName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.ImgUrl">
+            <summary>
+            产品图片地址
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.Description">
+            <summary>
+            产品描述
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.CategoryId">
+            <summary>
+            分类Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.SortIndex">
+            <summary>
+            排序码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.SearchCode">
+            <summary>
+            产品搜索码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.Status">
+            <summary>
+            状态：0：不可用 1：正常
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.GroupId">
+            <summary>
+            集团Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_product.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.DbModels.mall_third_user_info">
+            <summary>
+            第三方平台用户授权信息表
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.ThirdUserId">
+            <summary>
+            第三方平台用户Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.Sex">
+            <summary>
+            性别：1：男 0：女
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.Phone">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.Source">
+            <summary>
+            来源：1：微信 2：支付宝 依次往后枚举
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.UserUid">
+            <summary>
+            用户Uid（自系统）
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DbModels.mall_third_user_info.AuthorizeTime">
+            <summary>
+            授权时间
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.DtoModels.Company.AccountRegisterDto">
+            <summary>
+            账号注册
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DtoModels.Company.AccountRegisterDto.CompanyName">
+            <summary>
+            企业名称
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DtoModels.Company.AccountRegisterDto.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DtoModels.Company.AccountRegisterDto.PassWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DtoModels.Company.AccountRegisterDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DtoModels.Company.AccountRegisterDto.AreaId">
+            <summary>
+            区县Id
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.DtoModels.Company.AccountRegisterDto.Relation">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.BeginTran(System.Data.IsolationLevel)">
+            <summary>
+            初始化事务
+            </summary>
+            <param name="level"></param>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.CommitTran">
+            <summary>
+            完成事务
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.RollbackTran">
+            <summary>
+            完成事务
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Add``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>新增是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.AddReturnEntity``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>返回实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.AddReturnId``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>返回Id</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.AddReturnBool``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary> 
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>返回bool, 并将identity赋值到实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.AddReturnBool``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <param name="entitys">泛型集合</param>
+            <param name="isLock">是否加锁</param>
+            <returns>返回bool, 并将identity赋值到实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Updateable``1">
+            <summary>
+            修改数据源
+            </summary>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Update``1(``0,System.Boolean)">
+            <summary>
+            修改（主键是更新条件）
+            </summary>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Update``1(System.Linq.Expressions.Expression{System.Func{``0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            修改
+            </summary>
+            <param name="update"> 实体对象 </param> 
+            <param name="where"> 条件 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Update``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            修改（主键是更新条件）
+            </summary>
+            <param name="entitys"> 实体对象集合 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Delete``1(``0,System.Boolean)">
+            <summary>
+            删除
+            </summary>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Delete``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            删除
+            </summary>
+            <param name="where"> 条件 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.DeleteAll``1(System.Boolean)">
+            <summary>
+            删除所有
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="isLock"> 是否加锁 </param> 
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.DeleteById``1(System.Object,System.Boolean)">
+             <summary>
+             根据主键物理删除实体对象
+             </summary>
+             <param name="id">主键</param>
+            <param name="isLock"> 是否加锁 </param> 
+             <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.DeleteByIds``1(System.Object[],System.Boolean)">
+             <summary>
+             根据主键批量物理删除实体集合
+             </summary>
+             <param name="ids">主键集合</param>
+            <param name="isLock"> 是否加锁 </param> 
+             <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Queryable``1">
+            <summary>
+            查询数据源
+            </summary>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetList``1">
+            <summary>
+            查询集合
+            </summary>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">
+            <summary>
+            查询集合
+            </summary>
+            <param name="whereLambda">查询表达式</param>
+            <param name="orderbyLambda">排序表达式</param> 
+            <param name="isAsc">是否升序</param> 
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetList``1(System.String,System.Object)">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql">sql</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetSugarList``1(System.String,SqlSugar.SugarParameter[])">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql">sql</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetList``1(System.Collections.Generic.List{SqlSugar.IConditionalModel})">
+            <summary>
+            根据条件获取实体列表
+            </summary>
+            <param name="conditionals">Sugar调价表达式集合</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetDataTable``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            查询集合
+            </summary>
+            <param name="whereLambda">查询表达式</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetDataTable(System.String)">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql">sql</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.Single``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">
+            <summary>
+            查询单条数据
+            </summary>
+            <param name="whereLambda">查询表达式</param> 
+            <param name="orderbyLambda">排序表达式</param> 
+            <param name="isAsc">是否升序</param> 
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetById``1(System.Object)">
+            <summary>
+            根据主键获取实体对象
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.IsExist``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            是否存在
+            </summary>
+            <param name="whereLambda">查询表达式</param> 
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【页码，每页条数】
+            </summary>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},SqlSugar.OrderByType,System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【排序，页码，每页条数】
+            </summary>
+            <param name="orderExp">排序表达式</param>
+            <param name="orderType">排序类型</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【Linq表达式条件，页码，每页条数】
+            </summary>
+            <param name="whereExp">Linq表达式条件</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},SqlSugar.OrderByType,System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【Linq表达式条件，排序，页码，每页条数】
+            </summary>
+            <param name="whereExp">Linq表达式条件</param>
+            <param name="orderExp">排序表达式</param>
+            <param name="orderType">排序类型</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(System.Collections.Generic.List{SqlSugar.IConditionalModel},System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【Sugar表达式条件，页码，每页条数】
+            </summary>
+            <param name="conditionals">Sugar条件表达式集合</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(System.Collections.Generic.List{SqlSugar.IConditionalModel},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},SqlSugar.OrderByType,System.Int32,System.Int32)">
+            <summary>
+             获取分页列表【Sugar表达式条件，排序，页码，每页条数】
+            </summary>
+            <param name="conditionals">Sugar条件表达式集合</param>
+            <param name="orderExp">排序表达式</param>
+            <param name="orderType">排序类型</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetPageList``1(MicroMall.Model.SugarExtensions.QueryDescriptor)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="query">查询条件</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:MicroMall.Model.IRepository.GetDataTablePageList``1(MicroMall.Model.SugarExtensions.QueryDescriptor,System.Int32@)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="query">查询条件</param>
+            <param name="totalCount">总行数</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="F:MicroMall.Model.Repository.DbContext">
+            <summary>
+            数据库连接
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.Repository.BeginTran(System.Data.IsolationLevel)">
+            <summary>
+            初始化事务
+            </summary>
+            <param name="level"></param>
+        </member>
+        <member name="M:MicroMall.Model.Repository.CommitTran">
+            <summary>
+            完成事务
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.Repository.RollbackTran">
+            <summary>
+            完成事务
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Insertable``1(``0)">
+            <summary>
+            新增数据源
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Add``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>新增是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Add``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entitys">泛型集合</param>
+            <param name="isLock">是否加锁</param>
+            <returns>新增是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.AddReturnEntity``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>返回实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.AddReturnId``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>返回Id</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.AddReturnBool``1(``0,System.Boolean)">
+            <summary>
+            新增
+            </summary> 
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock">是否加锁</param>
+            <returns>返回bool, 并将identity赋值到实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.AddReturnBool``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            新增
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entitys">泛型集合</param>
+            <param name="isLock">是否加锁</param>
+            <returns>返回bool, 并将identity赋值到实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Updateable``1">
+            <summary>
+            修改数据源
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Update``1(``0,System.Boolean)">
+            <summary>
+            修改（主键是更新条件）
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Update``1(System.Linq.Expressions.Expression{System.Func{``0,``0}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            修改
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="update"> 实体对象 </param> 
+            <param name="where"> 条件 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Update``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            修改
+            </summary>
+            <param name="update"> 匿名对象 </param> 
+            <param name="where"> 条件 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Update``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            修改（主键是更新条件）
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entitys"> 实体对象集合 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>修改是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Delete``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            删除
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="list"> 实体对象列表 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Delete``1(``0,System.Boolean)">
+            <summary>
+            删除
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="entity"> 实体对象 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Delete``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            删除
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="where"> 条件 </param> 
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.DeleteAll``1(System.Boolean)">
+            <summary>
+            删除所有
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="isLock"> 是否加锁 </param> 
+            <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.DeleteById``1(System.Object,System.Boolean)">
+             <summary>
+             根据主键物理删除实体对象
+             </summary>
+             <typeparam name="T"></typeparam>
+             <param name="id">主键</param>
+            <param name="isLock"> 是否加锁 </param> 
+             <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.DeleteByIds``1(System.Object[],System.Boolean)">
+             <summary>
+             根据主键批量物理删除实体集合
+             </summary>
+             <typeparam name="T"></typeparam>
+             <param name="ids">主键集合</param>
+            <param name="isLock"> 是否加锁 </param> 
+             <returns>删除是否成功</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Queryable``1">
+            <summary>
+            查询数据源
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Queryable``2(System.Linq.Expressions.Expression{System.Func{``0,``1,System.Object[]}})">
+            <summary>
+            多表连接查询数据源
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Queryable``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,System.Object[]}})">
+            <summary>
+            多表连接查询数据源
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <returns>数据源</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">
+            <summary>
+            查询集合
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="whereLambda">查询表达式</param>
+            <param name="isAsc">是否升序</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetList``1">
+            <summary>
+            查询集合
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetList``1(System.String,System.Object)">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql">sql</param>
+            <param name="parameters">参数</param>
+            <returns>实体</returns> 
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetList``1(System.String,SqlSugar.SugarParameter[])">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql">sql</param>
+            <param name="parameters">参数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetList``1(System.Collections.Generic.List{SqlSugar.IConditionalModel})">
+            <summary>
+            根据条件获取实体列表
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="conditionals">Sugar调价表达式集合</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetDataTable``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            查询集合
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="whereLambda">查询表达式</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetDataTable``1(System.String)">
+            <summary>
+            查询集合
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="sql">sql</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetDataTable(System.String)">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetProcedure(System.String,System.Collections.Generic.List{SqlSugar.SugarParameter})">
+            <summary>
+            查询存储过程
+            </summary> 
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数</param>
+        </member>
+        <member name="M:MicroMall.Model.Repository.Single``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">
+            <summary>
+            查询单条数据
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <param name="whereLambda">查询表达式</param> 
+            <param name="orderbyLambda">排序表达式</param> 
+            <param name="isAsc">是否升序</param> 
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetById``1(System.Object)">
+            <summary>
+            根据主键获取实体对象
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetScalar(System.String,System.Object)">
+            <summary>
+            获取首行首列
+            </summary>
+            <param name="sql">sql语句</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetScalar(System.String,SqlSugar.SugarParameter[])">
+            <summary>
+            获取首行首列
+            </summary>
+            <param name="sql">sql语句</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.IsExist``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            是否存在
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型</typeparam>
+            <param name="whereLambda">查询表达式</param> 
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.ExecuteSql(System.String)">
+            <summary>
+            执行sql
+            </summary>
+            <param name="sql"></param>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetSugarList``1(System.String,SqlSugar.SugarParameter[])">
+            <summary>
+            查询集合
+            </summary>
+            <param name="sql">sql</param>
+            <param name="parameters">参数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【页码，每页条数】
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},SqlSugar.OrderByType,System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【排序，页码，每页条数】
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="orderExp">排序表达式</param>
+            <param name="orderType">排序类型</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【Linq表达式条件，页码，每页条数】
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="whereExp">Linq表达式条件</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},SqlSugar.OrderByType,System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【Linq表达式条件，排序，页码，每页条数】
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="whereExp">Linq表达式条件</param>
+            <param name="orderExp">排序表达式</param>
+            <param name="orderType">排序类型</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(System.Collections.Generic.List{SqlSugar.IConditionalModel},System.Int32,System.Int32)">
+            <summary>
+            获取分页列表【Sugar表达式条件，页码，每页条数】
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="conditionals">Sugar条件表达式集合</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(System.Collections.Generic.List{SqlSugar.IConditionalModel},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},SqlSugar.OrderByType,System.Int32,System.Int32)">
+            <summary>
+             获取分页列表【Sugar表达式条件，排序，页码，每页条数】
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="conditionals">Sugar条件表达式集合</param>
+            <param name="orderExp">排序表达式</param>
+            <param name="orderType">排序类型</param>
+            <param name="pageIndex">页码（从0开始）</param>
+            <param name="pageSize">每页条数</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetPageList``1(MicroMall.Model.SugarExtensions.QueryDescriptor)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="query">查询条件(不能为空)</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetDataTablePageList``1(MicroMall.Model.SugarExtensions.QueryDescriptor,System.Int32@)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T">泛型参数(集合成员的类型)</typeparam>
+            <param name="query">查询条件</param>
+            <param name="totalCount">总行数</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.ParseCondition(System.Collections.Generic.List{SqlSugar.ConditionalModel})">
+            <summary>
+            查询条件转换
+            </summary>
+            <param name="contitons">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.ParseKeyOr(SqlSugar.ConditionalModel)">
+            <summary>
+            转换Or条件
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.ParseOrderBy(System.Collections.Generic.List{MicroMall.Model.SugarExtensions.OrderByClause})">
+            <summary>
+            排序转换
+            </summary>
+            <param name="orderBys">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetSql(System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.List{SqlSugar.SugarParameter}})">
+            <summary>
+            根据SQLSugar表达式获取Sql语句
+            </summary>
+            <param name="keyValuePair"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.Repository.GetSqlValue(System.Object)">
+            <summary>
+            值转成sql值
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MicroMall.Model.ResponseResult`1">
+            <summary>
+            接口返回
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MicroMall.Model.ResponseResult`1.code">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.ResponseResult`1.success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.ResponseResult`1.msg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.ResponseResult`1.subMsg">
+            <summary>
+            详细信息
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.ResponseResult`1.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:MicroMall.Model.ResponseResult`1.ToSuccess(`0)">
+            <summary>
+            成功返回
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Model.ResponseResult`1.ToFail(System.String,System.String)">
+            <summary>
+            失败返回
+            </summary>
+            <param name="msg">失败信息</param>
+            <param name="subMsg">详细信息</param>
+            <returns></returns>
+        </member>
+        <member name="F:MicroMall.Model.CodeStatus.SUCCESS">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:MicroMall.Model.CodeStatus.FAIL">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.SugarExtensions.PageBean`1">
+            <summary>
+            分页信息
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.PageBean`1.TotalCount">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.PageBean`1.PageSize">
+            <summary>
+            每页条数
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.PageBean`1.Data">
+            <summary>
+            当前页数据源
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.PageBean`1.TotalPage">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.SugarExtensions.OrderSequence">
+            <summary>
+            排序类型
+            </summary>
+        </member>
+        <member name="T:MicroMall.Model.SugarExtensions.OrderByClause">
+            <summary>
+            排序枚举
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.QueryDescriptor.PageSize">
+            <summary>
+            行数
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.QueryDescriptor.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.QueryDescriptor.OrderBys">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:MicroMall.Model.SugarExtensions.QueryDescriptor.Conditions">
+            <summary>
+            条件
+            </summary>
+        </member>
+    </members>
+</doc>

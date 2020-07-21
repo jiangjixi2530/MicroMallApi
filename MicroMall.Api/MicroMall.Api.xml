@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MicroMall.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MicroMall.Api.Controllers.CategoryController">
+            <summary>
+            产品分类相关
+            </summary>
+        </member>
+        <member name="M:MicroMall.Api.Controllers.CategoryController.GetCategories(System.Int32)">
+            <summary>
+            获取集团下的所有分类
+            </summary>
+            <param name="groupId">集团Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Api.Controllers.CompanyController.CompanyRegister(MicroMall.Model.DtoModels.Company.AccountRegisterDto)">
+            <summary>
+            账号注册
+            </summary>
+            <param name="accountRegister"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroMall.Api.Controllers.TestController.GetText(System.String)">
+            <summary>
+            测试
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

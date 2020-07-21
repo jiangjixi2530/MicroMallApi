@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\MicroMall.Api\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroMall.Common\MicroMall.Common.csproj" />
+    <ProjectReference Include="..\MicroMall.ISerivce\MicroMall.ISerivces.csproj" />
+    <ProjectReference Include="..\MicroMall.Model\MicroMall.Model.csproj" />
+  </ItemGroup>
+
+</Project>
