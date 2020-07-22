@@ -16,6 +16,11 @@
             <param name="groupId">集团Id</param>
             <returns></returns>
         </member>
+        <member name="T:MicroMall.Api.Controllers.CompanyController">
+            <summary>
+            企业信息相关
+            </summary>
+        </member>
         <member name="M:MicroMall.Api.Controllers.CompanyController.CompanyRegister(MicroMall.Model.DtoModels.Company.AccountRegisterDto)">
             <summary>
             账号注册

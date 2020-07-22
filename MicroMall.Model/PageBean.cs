@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroMall.Model.SugarExtensions
+namespace MicroMall.Model
 {
     /// <summary>
     /// 分页信息

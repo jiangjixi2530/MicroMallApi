@@ -28,9 +28,9 @@ namespace MicroMall.Api.Controllers
         /// <param name="groupId">集团Id</param>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult<ResponseResult<List<mall_category>>> GetCategories(int groupId)
+        public async Task<ActionResult<ResponseResult<List<mall_category>>>> GetCategories(int groupId)
         {
-            var categories = CategoryServices.GetCategories(groupId);
+            var categories = await CategoryServices.GetCategories(groupId);
             if (categories != null && categories.Count > 0)
             {
                 return ResponseResult<List<mall_category>>.ToSuccess(categories);

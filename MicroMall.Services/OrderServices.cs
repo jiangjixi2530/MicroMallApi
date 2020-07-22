@@ -1,17 +1,13 @@
-﻿using MicroMall.ISerivces;
-using MicroMall.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MicroMall.IRepository;
+using MicroMall.ISerivces;
 
 namespace MicroMall.Services
 {
     public class OrderServices : IOrderServices
     {
-        private readonly IRepository repository;
+        private readonly IBaseRepository repository;
 
-        public OrderServices(IRepository repository)
+        public OrderServices(IBaseRepository repository)
         {
             this.repository = repository;
         }

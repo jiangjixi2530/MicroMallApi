@@ -9,10 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MicroMall.Common\MicroMall.Common.csproj" />
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MicroMall.IRepository\MicroMall.IRepository.csproj" />
-    <ProjectReference Include="..\MicroMall.ISerivce\MicroMall.ISerivces.csproj" />
-    <ProjectReference Include="..\MicroMall.Model\MicroMall.Model.csproj" />
   </ItemGroup>
 
 </Project>

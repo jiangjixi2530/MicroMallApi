@@ -1,24 +1,23 @@
 ﻿using MicroMall.ISerivces;
-using MicroMall.Model;
 using MicroMall.Model.DbModels;
-using System;
+using MicroMall.IRepository;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace MicroMall.Services
 {
     public class CategoryServices : ICategoryServices
     {
-        private readonly IRepository repository;
+        private readonly IBaseRepository repository;
 
-        public CategoryServices(IRepository repository)
+        public CategoryServices(IBaseRepository repository)
         {
             this.repository = repository;
         }
 
-        public List<mall_category> GetCategories(int groupId)
+        public async Task<List<mall_category>> GetCategories(int groupId)
         {
-            return repository.GetList<mall_category>(x => x.GroupId == groupId);
+            return await repository.GetList<mall_category>(x => x.GroupId == groupId);
         }
     }
 }

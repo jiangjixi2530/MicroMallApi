@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MicroMall.ISerivces
 {
@@ -12,6 +13,6 @@ namespace MicroMall.ISerivces
         /// </summary>
         /// <param name="groupId">集团Id</param>
         /// <returns></returns>
-        List<mall_category> GetCategories(int groupId);
+        Task<List<mall_category>> GetCategories(int groupId);
     }
 }

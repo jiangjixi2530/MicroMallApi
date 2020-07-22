@@ -1,5 +1,6 @@
 ﻿using MicroMall.Model;
 using MicroMall.Model.DbModels;
+using System.Threading.Tasks;
 
 namespace MicroMall.ISerivces
 {
@@ -11,19 +12,19 @@ namespace MicroMall.ISerivces
         /// </summary>
         /// <param name="userName"></param>
         /// <returns></returns>
-        mall_company GetCompanyByUserName(string userName);
+        Task<mall_company> GetCompanyByUserName(string userName);
         /// <summary>
         /// 根据手机号获取企业信息
         /// </summary>
         /// <param name="phone"></param>
         /// <returns></returns>
-        mall_company GetCompanyByPhone(string phone);
+        Task<mall_company> GetCompanyByPhone(string phone);
         /// <summary>
         /// 根据id获取企业信息
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        mall_company GetCompayById(int id);
+        Task<mall_company> GetCompayById(int id);
         #endregion
         /// <summary>
         /// 注册
@@ -34,6 +35,6 @@ namespace MicroMall.ISerivces
         /// <param name="phone">手机号</param>
         /// <param name="areaId">区县Id</param>
         /// <returns></returns>
-        int Register(string name, string userName, string pwd,string phone,int areaId);
+        Task<int> Register(string name, string userName, string pwd, string phone, int areaId);
     }
 }

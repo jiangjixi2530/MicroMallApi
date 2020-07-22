@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMall.Model", "MicroMal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMall.Services", "MicroMall.Services\MicroMall.Services.csproj", "{3022A7E9-EFB9-4C99-ACAA-5C1B6E98057E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMall.IRepository", "MicroMall.IRepository\MicroMall.IRepository.csproj", "{EF4815D7-5CFC-4BDB-B660-2358C14F71F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMall.Repository", "MicroMall.Repository\MicroMall.Repository.csproj", "{370447F6-C352-4CD5-B3D3-498AABE5100F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{3022A7E9-EFB9-4C99-ACAA-5C1B6E98057E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3022A7E9-EFB9-4C99-ACAA-5C1B6E98057E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3022A7E9-EFB9-4C99-ACAA-5C1B6E98057E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4815D7-5CFC-4BDB-B660-2358C14F71F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4815D7-5CFC-4BDB-B660-2358C14F71F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4815D7-5CFC-4BDB-B660-2358C14F71F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4815D7-5CFC-4BDB-B660-2358C14F71F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370447F6-C352-4CD5-B3D3-498AABE5100F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370447F6-C352-4CD5-B3D3-498AABE5100F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370447F6-C352-4CD5-B3D3-498AABE5100F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370447F6-C352-4CD5-B3D3-498AABE5100F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -45,12 +45,17 @@ namespace MicroMall.Api
                 options.IncludeXmlComments(modelXml);
             });
             services.AddControllers().AddNewtonsoftJson(stup => { stup.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver(); });
-            services.AddScoped<IRepository, Repository>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
             var basePath = AppContext.BaseDirectory;
+            var repositoryDllFile = Path.Combine(basePath, "MicroMall.Repository.dll");
+            // 获取 Repository.dll 程序集服务，并注册
+            var assemblysRepository = Assembly.LoadFrom(repositoryDllFile);
+            builder.RegisterAssemblyTypes(assemblysRepository)
+                   .AsImplementedInterfaces()
+                   .InstancePerDependency();
             var servicesDllFile = Path.Combine(basePath, "MicroMall.Services.dll");
             // 获取 Service.dll 程序集服务，并注册
             var assemblysServices = Assembly.LoadFrom(servicesDllFile);

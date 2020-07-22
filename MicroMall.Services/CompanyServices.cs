@@ -1,38 +1,40 @@
 ﻿using MicroMall.Common;
+using MicroMall.IRepository;
 using MicroMall.ISerivces;
 using MicroMall.Model;
 using MicroMall.Model.DbModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MicroMall.Services
 {
     public class CompanyServices : ICompanyServices
     {
-        private readonly IRepository repository;
+        private readonly IBaseRepository repository;
 
-        public CompanyServices(IRepository repository)
+        public CompanyServices(IBaseRepository repository)
         {
             this.repository = repository;
         }
 
-        public mall_company GetCompanyByPhone(string phone)
+        public async Task<mall_company> GetCompanyByPhone(string phone)
         {
-            return repository.Single<mall_company>(x => x.Phone == phone);
+            return await repository.Single<mall_company>(x => x.Phone == phone);
         }
 
-        public mall_company GetCompanyByUserName(string userName)
+        public async Task<mall_company> GetCompanyByUserName(string userName)
         {
-            return repository.Single<mall_company>(x => x.UserName == userName);
+            return await repository.Single<mall_company>(x => x.UserName == userName);
         }
 
-        public mall_company GetCompayById(int id)
+        public async Task<mall_company> GetCompayById(int id)
         {
-            return repository.GetById<mall_company>(id);
+            return await repository.GetById<mall_company>(id);
         }
 
-        public int Register(string name, string userName, string pwd, string phone, int areaId)
+        public async Task<int> Register(string name, string userName, string pwd, string phone, int areaId)
         {
             repository.BeginTran();
             try
@@ -48,7 +50,7 @@ namespace MicroMall.Services
                     CreateDate = AppSetting.NowTime,
                     ModifyDate = AppSetting.NowTime
                 };
-                int parentId = repository.AddReturnId(companyParent);
+                int parentId = await repository.AddReturnId(companyParent);
                 mall_company company = new mall_company
                 {
                     CompanyName = name,
@@ -60,7 +62,7 @@ namespace MicroMall.Services
                     CreateDate = AppSetting.NowTime,
                     ModifyDate = AppSetting.NowTime
                 };
-                var id = repository.AddReturnId(companyParent);
+                var id = await repository.AddReturnId(companyParent);
                 repository.CommitTran();
                 return id;
             }
